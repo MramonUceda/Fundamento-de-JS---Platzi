@@ -22,7 +22,7 @@ imprimirNombreEnMayusculas(luis);
 
 function cumpleaños(persona){
     return{
-        ...persona,
-        edad: persona.edad +1
+        ...persona, //desglozamos a la persona
+        edad: persona.edad +1  //pisamos edad
     }
 }
