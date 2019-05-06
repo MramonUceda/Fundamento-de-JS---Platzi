@@ -42,13 +42,17 @@ var jesus = {
 
 
 const esAlta = ({altura}) =>  altura > 1.8
+const esBaja = ({altura}) =>  altura < 1.8
 
 
 var personas = [mario, alberto, juan, vicky, jorge, marco, jesus];
 
 var personasAltas = personas.filter(esAlta); // filter nos devuelve un array nuevo OJO
+var personasBajas = personas.filter(esBaja); 
+
 
 console.log(personasAltas);
+console.log(personasBajas);
 
 
 

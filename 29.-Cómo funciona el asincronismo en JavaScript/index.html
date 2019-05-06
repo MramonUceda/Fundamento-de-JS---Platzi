@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cómo funciona el asincronismo en JavaScript</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Cómo funciona el asincronismo en JavaScript</h1>
+    <p>
+        JavaScript sólo puede hacer una cosa a la vez, sin embargo; es capaz de delegar la ejecución de ciertas
+        funciones a otros procesos. Este modelo de concurrencia se llama EventLoop.
+        <br> <br>
+        JavaScript tiene algo llamado CALLSTACK o PILA DE EJECUCIÓN, donde va poniendo las llamadas a funciones según
+        el orden de nuestro programa.Si una función llama a otra función entonces está se agrega a la pila. Cuando
+        termina de ejecutar una función, la saca de la pila y la bota.
+        <br> <br>
+        JavaScript delega en el navegador ciertas tareas y les asocia funciones que deberán ser ejecutadas al ser
+        completadas. Estas funciones se llaman callbacks, y una vez que el navegador ha regresado con la respuesta, el
+        callback asociado pasa a la cola de tareas para ser ejecutado una vez que JavaScript haya terminado todas las
+        instrucciones que están en la pila de ejecución.
+        <br> <br>
+        Si se acumulan funciones en la cola de tareas y JavaScript se encuentra ejecutando procesos muy pesados, el
+        EventLoop quedará bloqueado y esas funciones pudieran tardar demasiado en ejecutarse.
+    </p>
+</body>
+
+</html>

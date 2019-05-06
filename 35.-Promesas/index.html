@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Promesas</title>
+</head>
+
+<body>
+    <h1>Promesas</h1>
+    En esta clase veremos las promesas, que son valores que aun no conocemos. Las promesas tienen tre estados:
+    <ul>
+        <li>pending</li>
+        <li>fullfilled</li>
+        <li>rejected</li>
+    </ul>
+    <br>
+    Las promesas se invocan de la siguiente forma:
+    <pre>
+        new Promise( ( resolve, reject ) => {
+        // --- llamado asíncrono
+        if( todoOK ) {
+        // -- se ejecutó el llamado exitosamente
+        resolve()
+        } else {
+        // -- hubo un error en el llamado
+        reject()
+        }
+        } )
+    </pre>
+    No olvides ver el material adjunto de esta clase.
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

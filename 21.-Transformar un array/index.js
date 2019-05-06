@@ -52,19 +52,27 @@ var personasAltas = personas.filter(esAlta);
 //     return persona.altura > 1.8;
 // });
 //filtrado de personas bajas
+
+
 var personasBajas = personas.filter(esBaja);
-const pasarAlturaACms = persona => {
+
+
+// const pasarAlturaACms = persona => {
     
-    return {
-        ...persona,
-        altura: persona.altura * 100
-    }
-}
+//     return {
+//         ...persona,
+//         altura: persona.altura * 100
+//     }
+// }equivalente:
+const pasarAlturaACms = persona => ({
+    ...persona,
+    altura: persona.altura * 100
+});
 
 
 
 //cmd = centimetros
-var personasCms = personas.map(pasarAlturaACms)
+var personasCms = personas.map(pasarAlturaACms);  
 
 console.log(personasCms);
 
