@@ -18,7 +18,6 @@ function obtenerPersonaje(id) {
 
 function onError(id){
     console.log(`SUcedió un error al obtener el personaje ${id}`);
-    
 }
 
 obtenerPersonaje(1).then(function(personaje){//resolve(data)

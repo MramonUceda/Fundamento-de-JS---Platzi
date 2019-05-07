@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Múltiples promesas en paralelo</title>
+</head>
+
+<body>
+    <h1>Múltiples promesas en paralelo</h1>
+    <p>
+        Para hacer el llamado a múltiples promesas, nos apoyamos en un array de ids con el que luego construimos otro
+        arreglo de Promesas, que pasaremos como parámetro a Promise.all( arregloDePromesas ), con las promesas podemos
+        encadenar llamadas en paralelo, algo que no es posible usando callbacks.
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
